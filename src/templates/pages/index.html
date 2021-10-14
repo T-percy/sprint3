@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<header class="main-header">
+    <div class="container--flex">
+        <div class="logo-container">
+            <h1 class="logo">Donkin´Donuts</h1>
+        </div>
+    </div>
+</header>
+
+<section class="banner">
+    <img src='{{ url_for("static",filename="img/banner.jpg") }}' width='100' alt='' class="banner__img" />
+    <div class="banner__content">Una exquisita comida acompañada de una deliciosa bebida la encuentras aquí.
+</div>
+</section>
+
+<main class="main">
+    <section class="group group--color">
+      <div class="container">
+          <h2 class="main">Bienvenido a tu Restaurante Dunkin Donuts Virtual</h2>
+          <p class="main__txt">Escoge tu plato y haz tu pedido.</p>
+      </div>
+    </section>
+    <section class="group main__about__description">
+        <container class="container--flex">
+            <div class="column column--50">
+                <img src='{{ url_for("static",filename="img/food1.jpg") }}' alt='' />
+            </div>
+            <div class="column column --50">
+                <h3 class="column__title">Disfruta de las delicias que anhela tu paladar</h3>
+                <a href="" class="btn btn--contact"> <h2>Menús</h2></a>
+            </div>
+        </container>
+    </section>
+
+    <section class="group today-special">
+        <div class="container container__flex">
+            <div class="column colomn--50-25">
+                <img  src='{{ url_for("static",filename="img/pexels-chokniti-khongchum-2280545.jpg") }}' alt="" class="today-special__img">
+                <div class="today-special__title">Menú 1</div>
+                <div class=""></div>
+            </div>
+            <div class="column colomn--50-25">
+                <img  src='{{ url_for("static",filename="img/pexels-julie-aagaard-2097090.jpg") }}' alt="" class="today-special__img">
+                <div class="today-special__title">Menú 2</div>
+                <div class=""></div>
+            </div>
+            <div class="column colomn--50-25">
+                <img  src='{{ url_for("static",filename="img/pexels-rajesh-tp-1600711.jpg") }}' alt="" class="today-special__img">
+                <div class="today-special__title">Menú 3</div>
+                <div class=""></div>
+            </div>
+            <div class="column colomn--50-25">
+                <img  src='{{ url_for("static",filename="img/pexels-rajesh-tp-1603901.jpg") }}' alt="" class="today-special__img">
+                <div class="today-special__title">Menú 4</div>
+                <div class=""></div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}
