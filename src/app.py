@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, flash
-from flask.json.tag import PassDict
 from markupsafe import escape # Evitar inyección de código
 import os
 
@@ -13,7 +12,7 @@ app.secret_key = os.urandom(24)
 @app.route('/inicio/', methods=["GET"])
 @app.route('/home/', methods=["GET"])
 def index():
-    return render_template('pages/inicio.html')
+    return render_template('pages/index.html')
 
 @app.route('/login/', methods=["GET", "POST"])
 def login():
@@ -46,8 +45,7 @@ def register():
         telefono = escape(request.form["telefono"]) 
         fecha_nacimiento = escape(request.form["fecha_nacimiento"]) 
         acpterminos = escape(request.form["acpterminos"]) 
-    
-    return redirect('pages/login.html')
+        return redirect('pages/login.html')
 
 @app.route('/perfil/', methods=["GET", "POST"])
 def profile():
@@ -57,11 +55,11 @@ def profile():
 def dashboard():
     return render_template('pages/dashboard.html')
 
-@app.route('/menu/', methods=["GET", "POST"])
+@app.route('/menu/', methods=["GET"])
 def menu():
     return render_template('pages/menu.html')
 
-@app.route('/plato/', methods=["GET", "POST"])
+@app.route('/plato/', methods=["GET"])
 def plato():
     return render_template('pages/plato.html')
 
@@ -76,3 +74,11 @@ def order():
 @app.route('/lista_deseo/', methods=["GET", "POST"])
 def list_wish():
     return render_template('pages/lista_deseo.html')
+
+@app.route('/quienes_somos/', methods=["GET"])
+def about():
+    return render_template('pages/quienes_somos.html')
+
+@app.route('/contactenos/', methods=["GET", "POST"])
+def contact():
+    return render_template('pages/contactenos.html')
