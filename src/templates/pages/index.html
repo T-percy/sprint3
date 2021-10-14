@@ -1,4 +1,6 @@
 {% extends "base.html" %}
+{% include "components/navbar.html" %}
+{% include "components/notificaciones.html" %}
 
 
 {% block content %}
@@ -6,6 +8,9 @@
     <div class="container--flex">
         <div class="logo-container">
             <h1 class="logo">Donkin´Donuts</h1>
+        </div>
+        <div>
+            <button class="btn btn-warning" onclick="location.href='/login/'">Iniciar Sesión</button>
         </div>
     </div>
 </header>
@@ -61,4 +66,5 @@
     </section>
 </main>
 
+{% include "components/footer.html" %}
 {% endblock %}

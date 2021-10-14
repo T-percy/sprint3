@@ -4,24 +4,21 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,user-scalable=yes, initial-scale=1.0, maximun-scale=3.0, minimun-scale=1.0">
-        <title>App donuts - 
-            (% block title %)
-                {{titulo}}
-            (% endblock %)
+        <title>App donuts -{{titulo}}
+
         </title>
         <link rel='stylesheet' type='text/css' href='{{ url_for("static",filename="css/estilos.css") }}' />
         <link rel="stylesheet" href= "https://file.myfontastic.com/YDmsiEPzypie7UPHhcNEVM/icons.css" rel = "hoja de estilo">    
     </head>
     <body>
-        {% include "components/navbar.html" %}
-        {% include "components/notificaciones.html" %}
+        
         
         {% block content %}
         
         {% endblock %}
         <script type='text/JavaScript' src='{{ url_for("static", filename="js/menu.js") }}'></script>
     </body>
-    <footer class="main-footer">
-        {% include "components/footer.html" %}
-    </footer>
+    
+        
+
 </html>

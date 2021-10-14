@@ -1,1 +1,24 @@
-<h1>login</h1>
+{% extends "base.html" %}
+
+{% block content %}
+
+<form class="form">
+    <h1>Iniciar Sesion</h1> 
+    Usuario 
+    <input type="text" name="Nombre" maxlength="50">
+    <br>
+    
+     Contraseña 
+    <input type="text" name="Nombre" maxlength="50"> 
+    
+    <br>
+    <button class="btn btn-secondary" type="button" name="Boton" >Ingresar</button>
+     <p> <a href="">¿Olvido su Contraseña? </a>
+     <p>¿Aun no tiene usuario?<a href="/registro/"> 
+        Registrese aquí </a>
+</form>
+
+<div>
+    <button class="btn btn-primary" onclick="location.href='/'">Ir a Inicio</button>
+</div>
+{% endblock %}
