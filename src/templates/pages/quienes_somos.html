@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<main class="main">
+    <section class="group group--color">
+      <div class="container">
+          <h2 class="main">Nuestro Equipo</h2>
+          <p class="main__txt">Somos un restaurante típico que inició sus servicios el 18 de noviembre de 1996. Actualmente somos pioneros en la zona
+          contando con más de 70 platos variados entre mariscos, pescados y carnes certificadas. Ofrecemos un excelente servicio.
+          
+          Esta empresa familiar es atendida por sus dueños, quienes a diario consienten a sus comensales nacionales e
+          internacionales.</p>
+      </div>
+    </section>
+    <section class="group our-team">
+        <h2 class="group__title">Nuestro Equipo</h2>
+        <div class= "container container__flex">
+            <div class="column column--33">
+                <h3 class="our-team__title">Tonny</h3>
+              <img src='{{ url_for("static",filename="img/chef1.jpg") }}' width='100' alt='' class="banner__img" />
+                <p class="our-team__txt">Brindamos a nuestros clientes deliciosos platos de la comida típica  nacional e internacional, acompañados
+              de las bebidas artesanales de la región.</p>
+            </div>
+            <div class="column column--33">
+                <h3 class="our-team__title">Willian y Yuli</h3>
+              <img src='{{ url_for("static",filename="img/chef2.jpg") }}' width='100' alt='' class="banner__img" />
+                <p class="our-team__txt"></p>
+            </div>
+            <div class=" column--33">
+                <h3 class="our-team__title">Rember</h3>
+              <img src='{{ url_for("static",filename="img/chef3.jpg") }}' width='100' alt='' class="banner__img" />
+                <p class="our-team__txt"></p>
+            </div>
+            
+        </container>
+
+        
+        </section>   
+  
+  </main>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% include "components/notificaciones.html" %}
+
+{% block content %}
+<h1>Contáctenos</h1>
+    <p>Nos puede contactar por los siguientes medios:</p>
+    <div class="flex-container">
+        <p>Telefono</p>
+        <div>
+            <ul>
+                <li>Barranquilla: 605-3459856</li>
+                <li>Bogota: 601-5557381</li>
+            </ul>
+        </div>
+        <p>Email</p>
+        <div>
+            <ul>
+                <li>servicioalcliente@donkin-donuts.com.co</li>
+            </ul>
+        </div>
+        <p>Chat</p>
+        <div>
+            <ul>
+                <li><a href="#">Haga clic aquí</a></li>
+            </ul>
+        </div>
+        <p>Formulario Web</p>
+        <strong>Por favor deje sus datos y nosotros lo contactaremos</strong>
+        <div class="formulario">
+            <form method="post" action="">
+                <table>
+                    <tr>
+                        <td>Nombre</td><td><input type="text" class="campo"></td>
+                    </tr>
+                    <tr>
+                        <td>Apellidos</td><td><input type="text" class="campo"></td>
+                    </tr>
+                    <tr>
+                        <td>Telefono</td><td><input type="text" class="campo"></td>
+                    </tr>
+                    <tr>
+                        <td>Correo</td><td><input type="text" class="campo"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"></td><td><input type="submit" value="Enviar"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+

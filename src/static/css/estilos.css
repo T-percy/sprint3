@@ -247,10 +247,82 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #ccc;
   
   }
-  
+
+  .flex-container{
+    position: relative;
+     left: 25%;
+     top: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    background-size: contain;
+    width: 60%;
+    border-radius: 20px;
+    box-shadow: 10px 5px 10px darkgrey;   /*  background-image: url(img/descarga.jfif);
+    /*background-position: right bottom, left top;
+    background-size: cover; */
+}
+
+.flex-container > p {
+    background-color:khaki;
+    width: 99%;
+    height: 50px;
+    padding: 2px;
+    font-size: 30px;
+    
+   
+}
+
+body{
+    
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../imgs/descarga.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body > p {
+    margin-left: 25%;
+    color:black;
+    background-color: aliceblue ;
+    width: 60%;
+}
+
+ body > h1{
+     text-align: center;
+     font-size: 54px;
+ }
+
+ .formulario {
+     width: 500px;
+     position: relative;
+     left: 25%;   
+
+ }
+
+ .formulario input, .formulario td{
+    padding: 5px;
+ }
+
+.campo{
+    width: 250px;
+}
+
+.our-team {
+    text-align: center;
+    margin: 20px;
+
+}
+.our-team.container__flex {
 
 
-     
- 
-
+}
+.our-team__img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+}
 
