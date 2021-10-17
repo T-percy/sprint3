@@ -1,10 +1,34 @@
 {% extends "base.html" %}
+<link rel='stylesheet' type='text/css' href='{{ url_for("static",filename="css/menu.css") }}' />
 {% include "components/navbar.html" %}
 {% include "components/notificaciones.html" %}
 
 {% block content %}
 
-<h1>Página menú en construcción</h1>
+<form class="">
+    <div class="grid">
+    <h1><a href=""> Platos</a> 
+    <h1><a href=""> Bebidas</a>
+    <h1><a href=""> Combos</a> 
+    <button type="button" name="Boton" style="margin-left: 500px" > Buscar </button>
+      </div>
+      <br> <br> <br>
+      <img src='{{ url_for("static",filename="img/img1.jpg") }}' width="45%" height="45%" hspace="20" />
+      <img src='{{ url_for("static",filename="img/img2.jpg") }}' width="45%" height="45%" />
+
+    <br> <br> <br>
+    <button type="button" name="Boton" style="margin-left: 900px"> Ver detalle </button>
+    <button type="button" name="Boton" > Ver detalle </button>
+
+    <br> 
+    <img src='{{ url_for("static",filename="img/img3.jpg") }}' width="45%" height="45%" hspace="20" />
+    <img src='{{ url_for("static",filename="img/img4.jpg") }}' width="45%" height="45%" />
+      
+      <br> 
+    <button type="button" name="Boton" style="margin-left: 900px" > Ver detalle </button>
+    <button type="button" name="Boton" > Ver detalle </button>
+    
+</form>
 
 {% include "components/footer.html" %}
 {% endblock %}

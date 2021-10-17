@@ -1,10 +1,61 @@
 {% extends "base.html" %}
+<link rel='stylesheet' type='text/css' href='{{ url_for("static",filename="css/pedido.css") }}' />
 {% include "components/navbar.html" %}
 {% include "components/notificaciones.html" %}
 
 {% block content %}
 
-<h1>Página pedido en construcción</h1>
+<form class="grid">
+    <h1> Pedido</h1> <br>
+
+    <table border="1" width="100%">
+        <tr>
+            <td>Platos</td>
+            <td>Cantidad</td>
+            <td>Vr. unit</td>
+            <td>Subtotal</td>
+        </tr>
+        <tr>
+            <td>Ajiaco</td>
+            <td>2</td>
+            <td>12.000</td>
+            <td>24.000</td>
+        </tr>
+        <tr>
+            <td>Bandeja paisa</td>
+            <td>4</td>
+            <td>20.000</td>
+            <td>40.000</td>
+        </tr>
+
+    </table>
+    <br>
+    <div>
+        <label>Forma de entrega</label>
+        <select>
+            <option value="1">Cliente recibe a domicilio </option>
+            <option value="1">Cliente recibe en tienda</option>
+        </select>
+        <br><br>
+        <label>Direccion domicilio </label>
+        <input type="radio" name="Direccion">
+        Registrada en sistema <br><br>
+        <input type="radio" name="Direccion">
+        Otra direccion <br><br>
+        Escribir la otra direccion 
+        <input type="text" name="dir"> <br> <br>
+        <label>Forma de pago</label>
+        <select>
+            <option value="1">Efectivo </option>
+            <option value="1">Daviplata debito</option>
+            <option value="1">Tarjeta credito </option>
+            <option value="1">Daviplata</option>
+        </select>
+        <br> <br>
+        <button type="button" name="Boton" > Enviar </button>
+    </div>
+
+</form>
 
 {% include "components/footer.html" %}
 {% endblock %}
